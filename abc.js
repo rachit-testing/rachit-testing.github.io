@@ -4,7 +4,7 @@
         hash: "895dc831cea73c7ef99d9373baea5cde",
         origin: "https",
         subdomainFlag: "0",
-        swPath: "background-worker.js",
+        swPath: "/myservice-worker/background-worker.js",
         firefoxSwPath: "/ffsw-pushcrew.js",
         manifestUrl: "manifest.json",
         serverSyncUrl: "https://pushcrew.com",
@@ -4154,7 +4154,7 @@
                         !1)
                     },
                     registerServiceWorker: function() {
-                        "serviceWorker"in navigator && navigator.serviceWorker.register('./myservice-worker/background-worker.js',{scope:'/'}).then(this.initialiseState)
+                        "serviceWorker"in navigator && navigator.serviceWorker.register(this.serviceWorkerPath,{scope:'/'}).then(this.initialiseState)
                     },
                     detectBrowserType: function() {
                         "safari"in window && "pushNotification"in window.safari ? this.browserType = "safari" : "chrome"in window && "serviceWorker"in navigator ? this.browserType = "chrome" : /Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent) && "serviceWorker"in navigator ? this.browserType = "firefox" : (this.browserType = "not-supported",
