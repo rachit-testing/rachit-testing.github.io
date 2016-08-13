@@ -4154,7 +4154,7 @@
                         !1)
                     },
                     registerServiceWorker: function() {
-                        "serviceWorker"in navigator && navigator.serviceWorker.register(this.serviceWorkerPath,{scope:'../'}).then(this.initialiseState)
+                        "serviceWorker"in navigator && navigator.serviceWorker.register(this.serviceWorkerPath,{scope:'/'}).then(this.initialiseState)
                     },
                     detectBrowserType: function() {
                         "safari"in window && "pushNotification"in window.safari ? this.browserType = "safari" : "chrome"in window && "serviceWorker"in navigator ? this.browserType = "chrome" : /Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent) && "serviceWorker"in navigator ? this.browserType = "firefox" : (this.browserType = "not-supported",
