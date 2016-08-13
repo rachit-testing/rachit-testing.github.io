@@ -4,7 +4,7 @@
         hash: "895dc831cea73c7ef99d9373baea5cde",
         origin: "https",
         subdomainFlag: "0",
-        swPath: "myservice-worker/background-worker.js",
+        swPath: "/myservice-worker/background-worker.js",
         firefoxSwPath: "/ffsw-pushcrew.js",
         manifestUrl: "manifest.json",
         serverSyncUrl: "https://pushcrew.com",
